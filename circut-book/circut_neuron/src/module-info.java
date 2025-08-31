@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module circut_neuron {
-}
