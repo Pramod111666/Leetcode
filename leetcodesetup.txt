@@ -1,0 +1,26 @@
+Make sure that the workspace is ina totally different directory 
+
+right now you have the workspace in cd ~/ eclispe-workspaces
+
+
+Manually create the easy directory:
+
+Make sure you are in the ~/my-projects/Leetcode directory.
+
+
+mkdir easy
+This will create the empty easy folder where you want it to be.
+
+Create a new Java project in Eclipse:
+
+Go to File -> New -> Java Project.
+
+Project Name: easy
+
+Uncheck "Use default location".
+
+Click Browse... and navigate to your ~/my-projects/Leetcode directory, then select the easy folder you just created.
+
+Click Finish.
+
+
