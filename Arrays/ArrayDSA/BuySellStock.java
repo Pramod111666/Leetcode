@@ -47,6 +47,22 @@ public class BuySellStock {
         // Step 3: Iterate backwards to populate the maximum future prices.
         // For each day, the max future price is the maximum of the current day's price
         // and the max future price of the day after it.
+
+
+        // in this problem you would always need to buy low (left side of the array) and sell high(right side of the array)
+
+        // core logic for this is
+        //  you are travelling from backwards because you need the maxium price to be in the right side posistion of the array
+        // so you start to compare from the backwards of the actual array with the 1 position front fo the new array
+        // you start to filter out the maxium availabe price from the right side of the array
+        // so the filterd array will have the maximum value tthat is there in the right side travelled back wards
+        // now you can subtract the current postion with the maxfutures array
+
+        // The new array will always contain the maxium value when subtracted with a lesser number you will get max profit
+
+        //prices = [7, 1, 5, 3, 6, 4]:
+        //The resulting maxFuturePrice array is [7, 6, 6, 6, 6, 4].
+
         for (int i = n - 2; i >= 0; i--) {
             maxFuturePrice[i] = Math.max(prices[i], maxFuturePrice[i + 1]);
         }
