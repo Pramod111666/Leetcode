@@ -3,17 +3,17 @@ package com.DSApractice;
 import java.util.Stack;
 
 // Definition for singly-linked list.
-class ListNode {
+class ListtNode {
     int val;
     ListNode next;
 
-    ListNode() {}
+    ListtNode() {}
 
-    ListNode(int val) {
+    ListtNode(int val) {
         this.val = val;
     }
 
-    ListNode(int val, ListNode next) {
+    ListtNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
     }
